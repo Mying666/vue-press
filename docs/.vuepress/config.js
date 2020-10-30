@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Nginx',
-  base: '/vue-press/',
+  base: '/vuepress-ng/docs/.vuepress/',
   description: 'ng常用基本配置',
   themeConfig: {
     sidebar: [
