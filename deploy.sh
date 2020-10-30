@@ -3,10 +3,13 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-# 生成静态文件
-# npm run build
+# 删除原文件
+rm -rf docs/index.html docs/assets/ docs/404.html
 
-# mv ./docs/.vuepress/dist/* ./docs/
+# 生成静态文件
+npm run build
+
+mv ./docs/.vuepress/dist/* ./docs/
 
 git add -A
 git commit -m 'deploy'
