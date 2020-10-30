@@ -4,7 +4,9 @@
 set -e
 
 # 生成静态文件
-npm run build
+# npm run build
+
+# mv ./docs/.vuepress/dist/* ./docs/
 
 git add -A
 git commit -m 'deploy'
